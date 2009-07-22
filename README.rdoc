@@ -1,10 +1,14 @@
-= interlingua
+== Disclaimer
+
+This plugin is far from finished and under heavy development. I have put it on github because I18n became a subject on the Cucumber mailing list and others might be willing to contribute or be inspired to write there own version.
+
+== Interlingua
 
 This plugin is meant to increase productivity with Cucumber. When I was writing steps I kept on trying to find smart ways to make DRY steps. However, I kept myself repeating between applications and I also lost time by debugging my 'smart' steps. When I saw some posts of common steps (but only in English) I saw an opportunity. Furthermore, I missed the functionality of generators for languages other than English (especially Dutch). I actually preferred writing specs in English even though my customers native language is Dutch. This had to change!
 
-This plugin exploits knowledge that is already in the application. For example it will use I18n functionality from Rails applications to resolve paths and model_names. In this way new languages can be added with minimal effort. For each language it provides generators and common steps. The goal is to provide one interface for all languages. This way everyone can profit from best practises.
+This plugin exploits knowledge that is already in the application. For example it will use I18n functionality from Rails applications to resolve paths and model_names. In this way new languages can be added with minimal effort. For each language it provides generators and common steps. The goal is to provide one interface for all languages. This way everyone can profit from best practices and less code.
 
-In the future, I can imagine, this common interface provides use with features that are automatically translatable because they map to the same interface. E.g. a multi-lingual app could have features in different languages with any hassle. I also foresee that this commons interface can be used to automatically generate user manuals.
+In the future, I can imagine, this common interface provides us with features that are automatically translatable because they map to the same interface. E.g. a multi-lingual app could have features in different languages without any hassle. I also foresee that this commons interface can be used to automatically generate user manuals and whatever else.
 
 == Planned Usage
 
