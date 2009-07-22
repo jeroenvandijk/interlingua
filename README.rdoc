@@ -1,6 +1,32 @@
 = cucumber_support
 
-Description goes here.
+This plugin is meant to increase productivity with Cucumber. When I was writing steps I kept on trying to find smart ways to make DRY steps. However, I kept myself repeating between applications and I also lost time by debugging my 'smart' steps. When I saw some posts of common steps (but only in English) I saw an opportunity. Furthermore, I missed the functionality of generators for languages other than English (especially Dutch). I actually preferred writing specs in English even though my customers native language is Dutch. This had to change!
+
+This plugin exploits knowledge that is already in the application. For example it will use I18n functionality from Rails applications to resolve paths and model_names. In this way new languages can be added with minimal effort. For each language it provides generators and common steps. The goal is to provide one interface for all languages. This way everyone can profit from best practises.
+
+In the future, I can imagine, this common interface provides use with features that are automatically translatable because they map to the same interface. E.g. a multi-lingual app could have features in different languages with any hassle. I also foresee that this commons interface can be used to automatically generate user manuals.
+
+= Usage
+
+script/generate cucumber_i18n --language nl users name:string description:text
+
+If no --language option is given and you are using rails, by convention it will use your default locale.
+
+To run the features you can use the cucumber commands you would normally use <link>
+
+For language maintainers there are a few rake tasks that inform you if all steps succeed and if any steps are missing.
+
+rake cucumber_i18n:test_steps[nl]
+
+If you have a complete language setup, please inform me.
+
+= Support
+
+With the following commands you can see whether your language is already supported
+
+cucumber_support --language nl
+
+If it is not supported yet, you can send me a yaml file with the translation mapping. I would like to keep in touch for future updates so please leave me your contact details. The above command will also tell you if cucumber does not support your language. In this case you are recommended to first contact the cucumber team for a patch <link>.
 
 == Copyright
 

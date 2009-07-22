@@ -1,0 +1,30 @@
+# Vertaal standaard prefixes
+new_page: the new (.+) page
+
+# Use I18n for translations
+
+# given:
+#   i_am_on_page: ^I go to (.+)$
+#   these_objects_exist: ^the (.+) exist$
+#   the_object_exists: ^the (.+) exists$
+#   
+# when:
+#   i_go_to: ^I am on (.+)$
+# 
+# then:
+#   i_should_see: ^I should see ""
+#   i_should_not_see: ^I should not see ""
+# but:
+
+# Nederlands
+given:
+  i_am_on_page: ^dat ik op (.+) ben$
+  these_objects_exist: ^dat de (.+) bestaan$
+  the_object_exists: ^dat (?:de|het) (.+) bestaat$
+
+when:
+  i_go_to: ^ik naar (.+) ga$
+
+then:
+  i_should_see: ^zou ik "" moeten zien$
+  i_should_not_see: ^zou ik niet "" moeten zien$

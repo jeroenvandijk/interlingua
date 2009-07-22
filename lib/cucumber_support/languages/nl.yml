@@ -1,0 +1,28 @@
+paths:
+  new_object_path: de pagina voor het aanmaken van een __object__
+  edit_object_path: de pagina voor het wijzigen van __object_identifier__
+  objects_path: de overzichtspagina van __objects__
+  nested_objects_path: __method_identifier__ __object_identifier_
+  
+auxilary:
+    __object_identifier__: voor (?:de|het) __object__ met __attribute__ "__attribute_value"
+
+given:
+  i_am_on_page: 
+    - dat ik op __pagina__ ben
+    - ik op __pagina__ ben
+  these_objects_exist: dat de __objecten__ bestaan
+  the_object_exists: dat (?:de|het) __object__ bestaat
+
+when:
+  i_fill_in: ik "__waarde__" invul voor "__veld__"
+  i_go_to: ik naar __pagina__ ga
+  i_press: ik druk op "__knop__"
+  i_follow: ik "__link__" volg
+
+then:
+  i_should_see;1: 
+    - moet ik zien "__tekst__"
+    - moet ik zien
+  show_scope: debug "__dom_element__"
+  # i_should_not_see: ^zou ik niet "" moeten zien$
