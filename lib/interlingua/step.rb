@@ -1,4 +1,4 @@
-module CucumberSupport
+module Interlingua
   class Step
     
     # Because we cannot use lookbehind (1.8.6>), the order of these regular expressions is important

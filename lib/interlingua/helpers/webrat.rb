@@ -1,4 +1,4 @@
-module CucumberSupport
+module Interlingua
   module Helpers
     module Webrat
 

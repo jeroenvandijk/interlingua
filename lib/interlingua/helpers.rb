@@ -1,6 +1,6 @@
 require File.join(File.dirname(__FILE__) + '/helpers/webrat')
 
-module CucumberSupport
+module Interlingua
   module Helpers
     
     include Webrat
@@ -16,7 +16,7 @@ module CucumberSupport
   
 
     def guessed_path_to(page)
-      CucumberSupport::Base.paths.each_pair do |method, regex|
+      Interlingua::Base.paths.each_pair do |method, regex|
     
         # TODO add test, add keywords, each keyword should be matched with one
         # matched = []

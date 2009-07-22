@@ -1,12 +1,12 @@
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
-describe CucumberSupport::Step do
+describe Interlingua::Step do
     
   describe "simple case" do
     before(:each) do
       translation_method = "foo"
       translation = "foo"
-      @step = CucumberSupport::Step.new(translation_method, translation)
+      @step = Interlingua::Step.new(translation_method, translation)
       # raise @step.inspect
     end
 
@@ -34,7 +34,7 @@ describe CucumberSupport::Step do
     before(:each) do
       translation_method = "bar"
       translation = "bar __page_name__"
-      @step = CucumberSupport::Step.new(translation_method, translation)
+      @step = Interlingua::Step.new(translation_method, translation)
     end
 
     it "should return the correct regular expression" do
@@ -59,7 +59,7 @@ describe CucumberSupport::Step do
     before(:each) do
       translation_method = "bar"
       translation = %{bar __object__ "__page_name__"}
-      @step = CucumberSupport::Step.new(translation_method, translation)
+      @step = Interlingua::Step.new(translation_method, translation)
     end
     
     it "should return the correct regular expression" do
@@ -84,7 +84,7 @@ describe CucumberSupport::Step do
     before(:each) do
       translation_method = "bar"
       translation = %{bar "__page_name__" __object__}
-      @step = CucumberSupport::Step.new(translation_method, translation)
+      @step = Interlingua::Step.new(translation_method, translation)
     end
     
     it "should return the correct regular expression" do
@@ -109,7 +109,7 @@ describe CucumberSupport::Step do
     before(:each) do
       translation_method = "bar"
       translation = %{bar "__page_name__" __object__}
-      @step = CucumberSupport::Step.new(translation_method, translation, :arity => 27)
+      @step = Interlingua::Step.new(translation_method, translation, :arity => 27)
     end
 
     it "should return the correct arity" do

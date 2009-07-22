@@ -1,7 +1,7 @@
 require File.dirname(__FILE__) + "/step"
 # TODO test if world exists
-# module CucumberSupport
-module CucumberSupport
+# module Interlingua
+module Interlingua
   class Base
 
     class << self
