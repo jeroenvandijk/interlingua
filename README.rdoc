@@ -1,4 +1,4 @@
-= cucumber_support
+= interlingua
 
 This plugin is meant to increase productivity with Cucumber. When I was writing steps I kept on trying to find smart ways to make DRY steps. However, I kept myself repeating between applications and I also lost time by debugging my 'smart' steps. When I saw some posts of common steps (but only in English) I saw an opportunity. Furthermore, I missed the functionality of generators for languages other than English (especially Dutch). I actually preferred writing specs in English even though my customers native language is Dutch. This had to change!
 
@@ -6,7 +6,7 @@ This plugin exploits knowledge that is already in the application. For example i
 
 In the future, I can imagine, this common interface provides use with features that are automatically translatable because they map to the same interface. E.g. a multi-lingual app could have features in different languages with any hassle. I also foresee that this commons interface can be used to automatically generate user manuals.
 
-= Usage
+= Planned Usage
 
 script/generate cucumber_i18n --language nl users name:string description:text
 
@@ -24,7 +24,7 @@ If you have a complete language setup, please inform me.
 
 With the following commands you can see whether your language is already supported
 
-cucumber_support --language nl
+interlingua --language nl
 
 If it is not supported yet, you can send me a yaml file with the translation mapping. I would like to keep in touch for future updates so please leave me your contact details. The above command will also tell you if cucumber does not support your language. In this case you are recommended to first contact the cucumber team for a patch <link>.
 

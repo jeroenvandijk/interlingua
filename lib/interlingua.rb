@@ -1,6 +1,6 @@
-require File.dirname(__FILE__) + "/cucumber_support/step"
-require File.dirname(__FILE__) + "/cucumber_support/base"
-require File.dirname(__FILE__) + "/cucumber_support/helpers"
+require File.dirname(__FILE__) + "/interlingua/step"
+require File.dirname(__FILE__) + "/interlingua/base"
+require File.dirname(__FILE__) + "/interlingua/helpers"
 
 # TODO Make this different. For activesupport we need to do the following
 require 'rubygems'

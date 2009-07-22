@@ -1,4 +1,4 @@
-require File.join(File.dirname(__FILE__), "/../../../lib/cucumber_support/cucumber")
+require File.join(File.dirname(__FILE__), "/../../../lib/interlingua/cucumber")
 
 module SimpleWorld
   def method_missing(*args)

@@ -4,10 +4,10 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "cucumber_support"
+    gem.name = "interlingua"
     gem.summary = %Q{A gem that introduces common steps for all languages and make your features dry}
     gem.email = "jeroen@jeevidee.nl"
-    gem.homepage = "http://github.com/jeroenvandijk/cucumber_support"
+    gem.homepage = "http://github.com/jeroenvandijk/interlingua"
     gem.authors = ["Jeroen van Dijk"]
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
@@ -49,7 +49,7 @@ Rake::RDocTask.new do |rdoc|
   end
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "cucumber_support #{version}"
+  rdoc.title = "interlingua #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
