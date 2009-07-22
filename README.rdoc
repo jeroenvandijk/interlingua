@@ -6,7 +6,7 @@ This plugin exploits knowledge that is already in the application. For example i
 
 In the future, I can imagine, this common interface provides use with features that are automatically translatable because they map to the same interface. E.g. a multi-lingual app could have features in different languages with any hassle. I also foresee that this commons interface can be used to automatically generate user manuals.
 
-= Planned Usage
+== Planned Usage
 
 script/generate cucumber_i18n --language nl users name:string description:text
 
