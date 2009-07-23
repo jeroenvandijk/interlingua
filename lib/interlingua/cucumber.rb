@@ -1,7 +1,7 @@
 require File.join(File.dirname(__FILE__), '/base')
 require File.join(File.dirname(__FILE__), '/helpers')
 
-Interlingua::Base.load(Cucumber.language)
+Interlingua::Base.load(:nl)  # TODO Needs to be loaded dynamically somehow
 
 World(Interlingua::Helpers)
 
