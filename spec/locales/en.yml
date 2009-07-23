@@ -1,0 +1,9 @@
+en:
+  activerecord:
+    models:
+      user: 
+        one: user
+        other: users
+      friend:
+        one: friend
+        other: friends

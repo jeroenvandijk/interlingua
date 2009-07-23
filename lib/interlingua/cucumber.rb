@@ -1,10 +1,9 @@
 require File.join(File.dirname(__FILE__), '/base')
 require File.join(File.dirname(__FILE__), '/helpers')
 
-Interlingua::Base.load(:nl)
+Interlingua::Base.load(Cucumber.language)
 
 World(Interlingua::Helpers)
-# raise Interlingua::Base.translations['given'].inspect
 
 Interlingua::Base.steps.each do |step|
   instance_eval do

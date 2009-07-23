@@ -13,7 +13,7 @@ module Interlingua
       
       @steps = []
       %W(given when then).each do |prefix| 
-        definition[prefix].each do |old_translation_method, translation| 
+        definition['steps'][prefix].each do |old_translation_method, translation| 
           translation_method, arity = old_translation_method.split(";")
         
           new_step_proc = proc{ |t| @steps << Step.new(translation_method, t, :arity => arity && arity.to_i) }
@@ -22,7 +22,13 @@ module Interlingua
         end
       end
 
-      @paths = definition['paths']
+      @paths = parse_paths(definition['paths'])
+    end
+    
+    private
+      
+    def self.parse_paths(definition)
+      definition
     end
         
   end
