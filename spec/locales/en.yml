@@ -7,3 +7,6 @@ en:
       friend:
         one: friend
         other: friends
+      other_friend:
+        one: pall
+        other: palls

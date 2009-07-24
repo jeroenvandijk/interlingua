@@ -34,7 +34,13 @@ module Interlingua
 
       path_to(page)
     end
-  
+    
+    def find_model_name_from(translation)
+      find_model_rule_from(translation)[1]
+    end
+
+    private
+    
     def find_model_rule_from(translation)
       model_translations = I18n.t('activerecord.models')
       model_name = model_translations.index(translation)
@@ -45,9 +51,9 @@ module Interlingua
       model_translation_rules = model_translations.select {|k,v| v.is_a?(Hash) }
 
       rule, resource_name = []
-      model_translation_rules.find{ |list| rule, resource_name = list.second.index(translation), list.first; rule }
+      model_translation_rules.find { |list| resource_name = list.first.to_s if rule = list.second.index(translation) }
 
-      [rule, resource_name.to_s]
+      [rule, resource_name]
     end
   
   end

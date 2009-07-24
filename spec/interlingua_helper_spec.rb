@@ -39,4 +39,15 @@ describe Interlingua::Helpers do
       @base.guessed_path_to("non-existing page of non-existing object")
     end
   end
+  
+  context "#find_model_name_from" do
+    it "should return the correct model name" do
+      @base.find_model_name_from("palls").should == "other_friend"
+    end
+    
+    it "should return nil when model name does not exist" do
+      @base.find_model_name_from("non-existent model").should be_nil
+    end
+    
+  end
 end

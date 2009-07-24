@@ -8,6 +8,7 @@ steps:
     i_am_on_page: 
       - dat ik op __pagina__ ben
       - ik op __pagina__ ben
+      - ik ben op __pagina__
     these_objects_exist: dat de __objecten__ bestaan
     the_object_exists: dat (?:de|het) __object__ bestaat
 
@@ -15,7 +16,9 @@ steps:
     i_fill_in: ik "__waarde__" invul voor "__veld__"
     i_go_to: ik naar __pagina__ ga
     i_press: ik druk op "__knop__"
-    i_follow: ik "__link__" volg
+    i_follow: 
+      - ik "__link__" volg
+      - ik klik op "__link__"
 
   then:
     i_should_see;1: 
